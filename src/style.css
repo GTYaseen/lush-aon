@@ -1,38 +1,207 @@
-body{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap");
+* {
+  font-family: "Lato";
 }
-header .navBar{
-    display: flex;
-    height: 80px;
-    background-color: blue;
-    justify-content: space-between;
-    align-items: center;    
-    padding:0px 4rem ;
+body {
+  margin: 0;
+  padding: 0;
 }
-header .navBar ul{
-
-    list-style-type: none;
-    display: flex;
-    
+header .navBar {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  z-index: 9999;
 }
-header .navBar ul li{
-    align-items: center; 
-    padding:0px 10px;
-    margin: 10px;
-    font-size: 20px;
-    color: white;
+header .navBar .topList {
+  display: flex;
+  position: relative;
+  left: 30%;
+  z-index: 9999;
 }
-header .navBar button{
-    background-color: transparent;
-    color: white;
-    border: solid;
-    border-radius: 5px;
-    height: 3rem;
-    width: 10rem;
-    font-size: 20px;
+header .navBar .topList ul {
+  list-style-type: none;
+  display: flex;
+  z-index: 9999;
 }
-header .navBar img{
-    height: 80px;
+header .navBar .topList ul li {
+  align-items: center;
+  padding: 0px 10px;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  right: 30px;
+  z-index: 9999;
 }
-
+header .navBar button {
+  background-color: transparent;
+  color: white;
+  border: solid;
+  border-radius: 5px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 20px;
+  z-index: 9999;
+}
+header .navBar img {
+  height: 80px;
+  z-index: 9999;
+}
+main .cover {
+  display: flex;
+  justify-content: center;
+}
+main .cover img {
+  margin-top: -95px;
+  width: 100%;
+  padding: 0px 0px 200px 0px;
+}
+main .textOnCover {
+  max-width: 1350px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-top: -1000px;
+  list-style-type: none;
+  z-index: 9999;
+}
+main .textOnCover h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+main .textOnCover p {
+  font-family: "poppins";
+  font-size: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-weight: 500;
+}
+main .textOnCover ul {
+  list-style-type: none;
+  display: flex;
+  z-index: 9999;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+main .textOnCover ul li {
+  margin: 10px;
+  z-index: 9999;
+}
+main .textOnCover ul li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main .textOnCover ul li button img {
+  height: 60px;
+}
+main .WhatWeOffer {
+  max-width: 1350px;
+  margin: auto;
+  text-align: center;
+  color: #285a43;
+  margin-top: 600px;
+  list-style-type: none;
+}
+main .WhatWeOffer h1 {
+  font-size: 40px;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+main .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 320px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+main .card .cardContent {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 100px;
+}
+main .card .cardContent button {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #285a43;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 40px;
+  color: #285a43;
+}
+main .card .cardContent button:hover {
+  background-color: #285a43;
+  border: 1px solid;
+  border-color: #285a43;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 40px;
+  color: #fff;
+}
+main .card .cardImg img {
+  margin: 0%;
+  padding: 0%;
+  border: 1px solid;
+  border-radius: 10px;
+}
+main .card .cardContent .cardText {
+  margin-top: -10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+main .card .cardContent .cardText span {
+  text-decoration-line: line-through;
+  color: gray;
+}
+main .ourGallry {
+  margin: auto;
+  text-align: center;
+  color: #285a43;
+  margin-top: 200px;
+  list-style-type: none;
+}
+main .pic .imgwall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+main .pic .imgwall img{
+    width: 100%;
+}
+main .pic .imgwall .img2-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .pic .imgwall .img3-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .pic {
+    position: relative;
+    left: 0%;
+}
