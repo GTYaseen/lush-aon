@@ -1,3 +1,38 @@
 body{
     margin: 0;
+    padding: 0;
 }
+header .navBar{
+    display: flex;
+    height: 80px;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;    
+    padding:0px 4rem ;
+}
+header .navBar ul{
+
+    list-style-type: none;
+    display: flex;
+    
+}
+header .navBar ul li{
+    align-items: center; 
+    padding:0px 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+header .navBar button{
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-radius: 5px;
+    height: 3rem;
+    width: 10rem;
+    font-size: 20px;
+}
+header .navBar img{
+    height: 80px;
+}
+
