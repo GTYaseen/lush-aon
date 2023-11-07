@@ -9,8 +9,14 @@
   <body>
     <header>
       <div class="navBar">
-        <img src="./assets/logo.svg" />
+        <img id="logo" src="./assets/logo.svg" />
         <div class="topList">
+          <select name="DDM" id="">
+            <option>Home</option>
+            <option>About us</option>
+            <option>Planters</option>
+            <option>content</option>
+          </select>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
@@ -20,11 +26,6 @@
           </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="cover">
-        <img src="./assets/Cover.svg" />
-      </div>
       <div class="textOnCover">
         <h1>Nature's Beauty Delivered to You</h1>
         <p>
@@ -32,19 +33,17 @@
           shop. We offer a wide variety of flowers that will bring a touch of
           nature to your home!
         </p>
-        <ul>
-          <li>
-            <button>
-              <a href="#"><img src="./assets/book-now.svg" /></a>
-            </button>
-          </li>
-          <li>
-            <button>
-              <a href="#"><img src="./assets/watch-video.svg" /></a>
-            </button>
-          </li>
-        </ul>
+        <button class="Hero1">
+          <a href="#"><img src="./assets/book-now.svg" /></a>
+        </button>
+        <button class="Hero2">
+          <a href="https://www.youtube.com/watch?v=zR6fECxF44I"
+            ><img src="./assets/watch-video.svg"
+          /></a>
+        </button>
       </div>
+    </header>
+    <main>
       <div class="WhatWeOffer">
         <h1>What We Offer To You</h1>
         <div class="grid">
@@ -210,59 +209,62 @@
           </div>
         </div>
       </div>
-      <div class="intresting">
-        <div class="itemL">
-          <div class="itemT">
-            <img src="./assets/intresting/p1.svg" />
-            <h1>More productive with an atmosphere of greenery</h1>
-            <p>
-              An atmosphere of greenery can increase productivity in the
-              workplace. Studies show that plants improve air quality and
-              decrease stress...
-            </p>
-          </div>
-          <div class="itemLL">
-            <div class="together">
-              <img src="./assets/oo.svg" />
-              <p>January 20, 2023</p>
+      <div class="intrestingT">
+        <h1>Interesting blog to read</h1>
+        <div class="intresting">
+          <div class="itemL">
+            <div class="itemT">
+              <img src="./assets/intresting/p1.svg" />
+              <h1>More productive with an atmosphere of greenery</h1>
+              <p>
+                An atmosphere of greenery can increase productivity in the
+                workplace. Studies show that plants improve air quality and
+                decrease stress...
+              </p>
             </div>
-            <button><img src="./assets/pp.svg" /></button>
-          </div>
-        </div>
-        <div class="itemL">
-          <div class="itemT">
-            <img src="./assets/intresting/p2.svg" />
-            <h1>The benefits of plants in your room</h1>
-            <p>
-              Plants in your room can bring numerous benefits, such as improved
-              air quality, reduced stress, and increased feelings of
-              well-being....
-            </p>
-          </div>
-          <div class="itemLL">
-            <div class="together">
-              <img src="./assets/oo.svg" />
-              <p>January 20, 2023</p>
+            <div class="itemLL">
+              <div class="together">
+                <img src="./assets/oo.svg" />
+                <p>January 20, 2023</p>
+              </div>
+              <button><img src="./assets/pp.svg" /></button>
             </div>
-            <button><img src="./assets/pp.svg" /></button>
           </div>
-        </div>
-        <div class="itemL">
-          <div class="itemT">
-            <img src="./assets/intresting/p3.svg" />
-            <h1>Hobbyist plants in the house</h1>
-            <p>
-              Having hobbyist plants in the house is a great way to bring nature
-              indoors. Not only do they purify the air, but they....
-            </p>
+          <div class="itemL">
+            <div class="itemT">
+              <img src="./assets/intresting/p2.svg" />
+              <h1>The benefits of plants in your room</h1>
+              <p>
+                Plants in your room can bring numerous benefits, such as
+                improved air quality, reduced stress, and increased feelings of
+                well-being....
+              </p>
+            </div>
+            <div class="itemLL">
+              <div class="together">
+                <img src="./assets/oo.svg" />
+                <p>January 20, 2023</p>
+              </div>
+              <button><img src="./assets/pp.svg" /></button>
+            </div>
           </div>
+          <div class="itemL">
+            <div class="itemT">
+              <img src="./assets/intresting/p3.svg" />
+              <h1>Hobbyist plants in the house</h1>
+              <p>
+                Having hobbyist plants in the house is a great way to bring
+                nature indoors. Not only do they purify the air, but they....
+              </p>
+            </div>
 
-          <div class="itemLL">
-            <div class="together">
-              <img src="./assets/oo.svg" />
-              <p>January 20, 2023</p>
+            <div class="itemLL">
+              <div class="together">
+                <img src="./assets/oo.svg" />
+                <p>January 20, 2023</p>
+              </div>
+              <button><img src="./assets/pp.svg" /></button>
             </div>
-            <button><img src="./assets/pp.svg" /></button>
           </div>
         </div>
       </div>
@@ -274,9 +276,9 @@
         </div>
         <div class="midUl">
           <ul>
-            <li><img src="./assets/footerImg/instgram.svg"></li>
-            <li><img src="./assets/footerImg/facebook.svg"></li>
-            <li><img src="./assets/footerImg/twitter.svg"></li>
+            <li><img src="./assets/footerImg/instgram.svg" /></li>
+            <li><img src="./assets/footerImg/facebook.svg" /></li>
+            <li><img src="./assets/footerImg/twitter.svg" /></li>
           </ul>
           <div class="lastUl">
             <ul>
