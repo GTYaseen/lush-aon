@@ -528,8 +528,6 @@ header .navBar .topList select {
     height: 1750px;
     margin: auto;
   }
-
-  
 }
 @media screen and (max-width: 1349px) {
   /* make the webpage responsive */
@@ -608,6 +606,10 @@ header .navBar .topList select {
     font-size: 15px;
   }
   main .TextImg .inputI button {
+    width: 95px;
+    height: 48px;
+  }
+  main .TextImg .inputI button:hover {
     width: 95px;
     height: 48px;
   }
