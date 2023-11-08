@@ -64,7 +64,6 @@ header .navBar .topList ul li a {
 }
 header .navBar .topList ul li a:hover {
   text-decoration: underline;
-  color: white;
 }
 header .navBar #logo {
   width: 125px;
@@ -101,6 +100,63 @@ header .textOnCover button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+header .button button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: #ffffff;
+  width: 175px;
+  height: 42px;
+}
+header .button ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+header .button .book {
+  background-color: #285A43;
+  border: solid 1px #285A43;
+  margin-right: 10px;
+}
+
+header .button .book:hover {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+header .button .watch {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  margin-top: 2px;
+  justify-content: center;
+  align-items: center;
+}
+header .button .watch img{
+  width: 16px;
+  height: 16px;
+}
+
+header .button .watch a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .button .watch .des{
+  display: flex;
+}
+header .button .watch .des img{
+  width: 16px;
+  height: 16px;
+}
+header .button .watch:hover {
+  background-color: #285A43;
+  border: solid 1px #285A43;
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s;
 }
 header .textOnCover button img {
   height: 60px;
@@ -169,6 +225,7 @@ main .card .cardContent button:hover {
   font-size: 15px;
   margin-top: 40px;
   color: #fff;
+  transition: 0.5s;
 }
 main .card .cardImg img {
   margin: 0%;
@@ -188,6 +245,14 @@ main .card .cardContent .cardText {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+}
+main .card .cardContent .cardText h1{
+  padding-bottom: 20px;
+  margin-top: -5px;
+}
+main .card .cardContent .cardText p{
+  padding-bottom: 20px;
+  margin-top: -5px;
 }
 main .card .cardContent .cardText span {
   text-decoration-line: line-through;
@@ -329,6 +394,7 @@ main .TextImg .inputI button:hover {
   border-radius: 8px;
   color: #fff;
   font-size: 15px;
+  transition: 0.5s;
 }
 main .intrestingT{
   text-align: center;
@@ -640,5 +706,24 @@ header .navBar .topList select {
   }
   header .navBar .topList select {
     display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* make the webpage responsive */
+  footer .footer{
+    padding-right: 0;
+  }
+  main .AboutUs .card .square {
+    padding-right: 0;
+    width: 300px;
+  }
+  header .button ul {
+    display: block;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+  header .button .book {
+    margin-right: 0;
   }
 }
