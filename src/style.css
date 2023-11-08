@@ -106,8 +106,9 @@ header .button button {
   padding: 10px 30px;
   border-radius: 4px;
   color: #ffffff;
-  width: 175px;
-  height: 42px;
+  width: 220px;
+  height: 62px;
+  font-size: 20px;
 }
 header .button ul {
   display: flex;
