@@ -101,6 +101,7 @@ header .textOnCover button {
   border: none;
   cursor: pointer;
 }
+
 header .button button {
   padding: 10px 30px;
   border-radius: 4px;
@@ -113,6 +114,7 @@ header .button ul {
   list-style-type: none;
   align-items: center;
   justify-content: center;
+  padding-left: 0px;
 }
 header .button .book {
   background-color: #285A43;
